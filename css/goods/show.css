@@ -1,0 +1,37 @@
+
+
+.div-goods-show li
+{
+	border: 0px solid silver;
+	display:bolck;
+	margin-top:6px;
+}
+.div-goods-big-img
+{
+	margin-top:20px;
+	border:0px solid red;
+	width:460px;
+	height:500px;
+	
+}
+
+.div-goods-big-img img
+{
+	border-radius:20px;
+	
+}
+
+
+
+ .div-goods-small-img
+{
+	border:0px solid blue;
+	overflow:hidden;
+	height:110px;
+	margin-top:10px;
+}
+
+.span-input
+{
+	margin-bottom:0px;
+}

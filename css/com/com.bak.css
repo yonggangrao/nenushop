@@ -1,0 +1,599 @@
+@CHARSET "UTF-8";
+body
+{
+	font-family: 文泉驛微米黑, Ubuntu Mono,微软雅黑, 宋体, "proxima-nova", "Source Sans Pro";
+	font-size:16px;
+	word-break: break-word;
+	line-height:25px;
+	margin:0px;
+	color:#222;
+}
+
+a{color:black;}
+
+a:link{text-decoration:none;}
+
+input{width:200px;height:28px;}
+
+textarea{resize:none;width:100%;display:block;}
+ul{list-style-type:none;margin:0px;padding:0px;}
+
+img
+{
+	border:1px solid #ededed;
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+a:hover img{border:1px solid #0666c5;}
+
+
+/*header开始***********************************************************************************/
+.header
+{
+	border:0px solid #ededed;
+	background-color:#9dcc4a;
+	height:50px;
+	border-bottom: 1px solid #044e97;
+	/*box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);*/
+}
+
+.header li
+{
+	border:0px solid red;
+	display:inline-block;
+	font-size:16px;
+	font-weight:bold;
+}
+.header  a
+{
+	color:#ffffff;
+}
+.header .weixin
+{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:12%;
+	margin-right:10px;
+	margin-top:4px;
+}
+
+.header .li-left
+{
+	margin-left:10px;
+	line-height:50px;
+}
+.header .li-right
+{
+	float:right;
+	line-height:50px;
+	margin-left:0px;
+	margin-right:10px;
+}
+
+
+
+.header .input-search
+{
+	height:32px;
+	width:300px;
+	border-radius:4px;
+}
+
+
+/*header结束***********************************************************************************/
+
+
+
+/*contents开始***********************************************************************************/
+
+/*contents公共*************************************/
+.tips{font-size:13px;color:red;font-style:italic;}
+.span-input
+{
+	display:block;
+	margin-bottom:6px;
+	color:#000000;
+}
+.span-title
+{
+	font-weight:bold;
+}
+.span-info
+{
+	font-size:14px;
+	color: #000000;
+}
+
+	
+.div-fill li
+{
+	border:0px solid silver;
+	margin-top:10px;
+}
+.div-fill textarea
+{
+	height:100px;
+} 
+	
+/**contents开始结束*************************************/
+
+
+
+.contents
+{
+	overflow:hidden;/*解决子元素浮动后父元素没有高度*/
+	border:0px solid red;
+	width:76%;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:100px;
+}
+.contents a:hover
+{
+	text-decoration:underline;
+}
+
+
+.left
+{
+	border:0px solid silver;
+	float:left;
+	width:64%;
+}
+
+.right
+{
+	float:right;
+	border:0px solid silver;
+	width:30%;
+	margin-left:3%;
+	margin-top:40px;
+}
+
+.div-left-header
+{
+	border-bottom:1px solid #ededed;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-weight:bold;
+	color:#666;
+	font-style:italic;
+}
+
+
+
+
+/*主页、商店显示商品列表*****************************************************/
+
+.div-goods-img
+{
+	border:0px solid red;
+	overflow:hidden;
+	/* max-height:110px; */
+}
+
+
+.div-goods-item
+{
+	border:0px solid silver;
+	border-bottom:1px solid #ededed;
+	margin-bottom:10px;
+}
+.div-goods-item li
+{
+	display:block;
+	overflow:hidden;
+	padding-bottom:2px;
+}
+.div-goods-item a:hover
+{
+	text-decoration:underline;
+}
+
+
+
+.div-goods-item .li-name a
+{
+	font-weight:bold;
+	line-height:32px;
+	color:#259;
+}
+.div-goods-item .li-name a:hover
+{
+	color:#055db5;
+}
+
+
+.div-goods-item .div-img
+{
+	float:left;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	margin-right:10px;
+	border:0px solid silver;
+}
+
+.div-goods-item .div-info
+{
+
+	display:inline;
+	
+	border:0px solid blue;
+}
+
+
+.span-other-info
+{
+	display:inline-block;
+	font-size:12px;
+	color:#999;
+	margin-right:6px;
+}
+.span-other-info a
+{
+	font-size:12px;
+	color:#999;
+}
+
+.span-other-info a:hover
+{
+	font-size:12px;
+	color:#259;
+}
+
+.div-see-more a
+{
+	background-color: #eff6fa;
+	text-align:center;
+	display:block;
+	font-style:italic;
+}
+.div-see-more a:hover
+{
+
+	background-color: #cce1ef;
+	text-decoration:underline;
+}
+
+/*主页、商店显示商品列表结束*****************************************************/
+
+
+
+
+/*上传商品***********************************/
+
+.div-goods-upload li
+{
+	border:0px solid silver;
+	margin-top:10px;
+}
+
+
+.div-goods-upload textarea
+{
+	height:100px;
+} 
+
+
+
+
+
+
+	/*上传图片***********************************/
+.div-file-display
+{
+	border:0px solid red;
+	margin-top:10px;
+	overflow:hidden;
+	height:124px;
+}
+
+.div-upload-btn
+{
+	position:relative;
+	/* margin-left:100px; */
+	float:left;
+	/* display:inline-block; */
+
+	border:0px solid blue;
+}
+
+
+
+.a-upload-btn
+{
+
+	z-index:-1;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	line-height:100px;
+
+	text-align: center;
+
+	border:1px solid #ededed;
+	border-radius: 10px;
+	
+	
+}
+.input-upload
+{
+	z-index:999;
+ 	position:absolute;
+	top:0px;
+  	left:0px;
+	display:inline-block;
+	opacity: 0;
+	filter:alpha(opacity=0);
+
+	width:100px;
+	height:100px;
+	cursor: pointer;
+	border:0px;
+}
+
+
+.div-img-item
+{
+	display:inline-block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin-right:10px;
+}
+.div-img-item span
+{
+	display:inline-block;
+	height:20px;
+	/* overflow:hidden; */
+	border:0px solid blue;
+	text-align:center;
+	
+}
+.div-img-item img
+{
+	border-radius:10px;
+}
+
+	/*上传图片结束***********************************/
+
+
+
+/*上传商品结束***********************************/
+
+
+
+/***登录、注册****************************************/
+
+.div-login li
+{
+	margin-top:10px;
+}
+
+
+.div-left-login
+{
+	width:40%;
+	border:0px solid blue;
+} 
+.div-right-login
+{
+	border:1px solid #ededed;
+	float:left;
+	margin-left:250px;
+	padding:0 12px;
+}
+
+.div-login-img
+{
+	margin-left:80px;
+	margin-top:100px;
+	
+}
+.div-login-img span
+{
+	font-weight:bold;
+	color:#666;
+	font-style:italic;
+}
+.div-login-img img
+{
+	width:250px;
+	height:250px;
+	border:1px solid #ededed;
+}
+.div-login-img a:hover img
+{
+	border:1px solid #0666c5;
+}
+
+/***登录、注册结束************************************/
+
+
+
+
+
+/*contents结束***********************************************************************************/
+
+/*footer*****************************/
+
+
+/*上传图片对话框************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************/
+
+/*
+.div-img-upload-dialog
+{
+	
+}
+.ui-dialog 
+{
+	
+	padding: 0px;
+}
+
+
+.ui-widget-header
+{
+	height: 40px;
+	border: 0px solid #ededed;
+	background: #ededed;
+	background-img: none;
+	
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0 20px;
+	color:#222;
+	line-height:40px;
+}
+.ui-dialog .ui-dialog-titlebar span{
+	display:inline-block;
+	margin-right:2px;
+}
+
+
+
+.ui-widget-content {
+border: 0px solid #ddd;
+background-color:#ffffff;
+background: #ffffff url("") 0% top repeat-x;
+color: #222;
+
+}
+.ui-dialog .ui-dialog-content
+{
+	background:#ffffff;
+	padding: 0px;
+	margin:10px;
+	border: 0px solid #ededed;
+}
+.ui-dialog .ui-dialog-buttonpane
+{
+	text-align: left;
+	border-width:0px;
+	border: 0px;
+	background-image: none;
+	margin-top:0px;
+	padding: 0px;
+}
+
+
+
+.div-upload-img
+{
+	float:left;
+	margin-top:0px;
+	display:inline-block;
+	position:relative;
+	border:0px solid blue;
+}
+
+
+
+.a-upload-img-btn
+{
+
+	z-index:-1;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	line-height:100px;
+
+	text-align: center;
+
+	border:1px solid #ededed;
+	border-radius: 10px;
+	
+	
+}
+.input-upload-img
+{
+	z-index:999;
+ 	position:absolute;
+	top:0px;
+  	left:0px;
+	display:inline-block;
+	opacity: 0;
+	filter:alpha(opacity=0);
+
+	width:100px;
+	height:100px;
+	cursor: pointer;
+	border:0px;
+}
+
+.img-upload-btn
+{
+	margin-bottom:10px;
+}
+
+.div-upload-img-display
+{
+	border:0px solid red;
+	margin-top:10px;
+	overflow:hidden;
+	height:200px;
+}
+*/
+/*上传图片对话框结束************************************/
+
+
+@media (max-width: 768px) {
+	body{font-size:17px;line-height:27px;}
+	.header
+	{
+		position: relative;
+		border:0px solid red;
+		margin:0 auto;
+		width:100%;
+		height:30px;
+		display:block;
+	}
+	.header ul{width:96%;margin:0 auto;}
+	
+	.header ul li
+	{
+		display:inline-block;
+		width:40px;
+		height:30px;
+		margin-top:0;
+		margin-right:2px;
+		/*background: url(../img/1.jpg) no-repeat;
+		background-size:100%;*/
+		background: rgba(0, 0, 0, 0) !important;
+		filter: alpha(opacity=0);
+		border:0px solid silver;
+		border-radius: 0px;
+	}
+	.header ul li a
+	{
+		line-height:30px;
+		border-radius: 0px;
+	}
+		
+	
+	.contents
+	{
+		border:0px solid #ededed;
+		width:100%;
+		margin:auto;
+		margin-bottom:20px;
+	}
+}

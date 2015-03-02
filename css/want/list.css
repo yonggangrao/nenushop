@@ -1,0 +1,15 @@
+.ul-wants li
+{
+	border-bottom:1px solid #ededed;
+	
+	margin-top:20px;
+}
+
+.ul-wants li span
+{
+	display:inline-block;
+	margin-right:10px;
+}
+
+
+

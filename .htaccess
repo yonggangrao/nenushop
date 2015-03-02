@@ -1,0 +1,31 @@
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex main.php
+
+ErrorDocument 404 /error
+ErrorDocument 403 /error
+
+
+#重写url#
+###########################################
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(/)?$ view/main/ [L]
+#给直接访问目录的url后面添加/
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ $1/ [R]
+
+RewriteRule ^error$ view/other/error.php
+RewriteRule ^about$ view/other/about.php
+RewriteRule ^search$ view/search/list.php
+
+#RewriteRule ^goods/?$ view/goods/ [L]
+
+RewriteRule ^(\w+)/(\w+)$ view/$1/$2.php
+RewriteRule ^(\w+)/(\w+)/(\w+)$ view/$1/$2.php?link_param=$3
+
+
+
+
+
